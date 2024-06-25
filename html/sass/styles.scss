@@ -3454,6 +3454,27 @@ section .btn-flag.btn-border{
     height: fit-content;
   }
 }
+
+.btn-wrap-dis{
+  position: relative;
+  &:after{
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 100%;
+    content: '';
+    cursor: no-drop;
+    z-index: 10;
+    width: 203px;
+    border-radius: 30px;
+  }
+}
+.form-step .input-wrap-submit .link{
+  color: #fff;
+  &:after{
+    background: #fff;
+  }
+}
 /*-----------------END-ACCORDION---------------------*/
 .bg-l-blue{
   background: $light-blue;

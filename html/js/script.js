@@ -36,7 +36,7 @@ jQuery(document).ready(function ($) {
   var swiperNews = new Swiper(".news-slider", {
     slidesPerView: 1,
     spaceBetween: 10,
-    loop: true,
+    //loop: true,
     pagination: {
       el: ".news-pagination",
       clickable: true,
