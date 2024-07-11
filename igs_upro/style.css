@@ -1,0 +1,65 @@
+/*   
+Theme Name: IGS
+*/
+.no-link a{
+  pointer-events: none;
+}
+.menu-bar .btn-wrap{
+  height: 42px;
+}
+.top-menu > ul > li > a:after{
+  display: none;
+}
+
+.top-menu > ul > li:has(.sub-menu)>a:after{
+  display: inline-block;
+}
+
+.bg-grey {
+  background: #E8E8EB;
+}
+
+.text-default .line {
+  position: relative;
+  padding-left: 15px;
+  font-size: 16px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.3;
+  margin: 15px 0 0;
+}
+
+.text-default .line:before{
+  position: absolute;
+  top: -5px;
+  bottom: -2px;
+  content: '';
+  width: 4px;
+  background-color: #1390cf;
+  left: 0;
+}
+
+.contact-banner .tabs-menu li .flag-wrap{
+  width: 40px;
+  margin-left: 17px;
+  border-radius: 100%;
+  background-color: #1390cf;
+}
+
+.contact-banner .tabs-menu li:nth-child(3) .flag-wrap{
+  padding: 5px;
+}
+.contact-banner .tabs-menu li:nth-child(3) .flag-wrap img{
+  width: 100%;
+  height: 30px;
+}
+
+.contact-banner .tab-item:nth-child(3) .user-wrap figure .flag-wrap{
+  padding: 5px;
+  border-radius: 100%;
+  background-color: #1390cf;
+}
+.contact-banner .tab-item:nth-child(3) .user-wrap figure .flag-wrap img{
+  width: 100%;
+}
