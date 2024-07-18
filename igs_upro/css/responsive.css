@@ -166,7 +166,10 @@
     width: 100%; }
 
   .home-banner .item .text {
-    padding: 20px 15px; }
+    padding: 20px 50px 20px 15px; }
+  .home-banner .item.no-link .text{
+    padding: 20px 15px;
+  }
 
   .home-banner .swiper-pagination {
     text-align: center;
@@ -234,7 +237,7 @@
     display: none; }
 
   .text-form .content {
-    padding: 30px; }
+    padding: 30px 30px 50px; }
 
   section .sub-title {
     font-size: 13px;
@@ -919,9 +922,32 @@
     margin-bottom: 12px; }
 
   .text-form .form-white {
-    display: none; }
+   /* display: none;*/
+    display: block;
+  }
   .text-form .form-step {
-    display: block; }
+    /*display: block;*/
+    display: none;
+  }
+
+  .form-white .input-wrap .wpcf7-form-control-wrap{
+    width: 100%;
+  }
+  .form-white .input-wrap{
+    margin-bottom: 15px;
+  }
+  .form-white .input-wrap-submit{
+    justify-content: center!important;
+  }
+  .text-form .wpcf7 form .wpcf7-response-output{
+    margin: 0;
+    width: 100%;
+    text-align: center;
+  }
+
+  .cta-block figure img, .cta-block figure .img-mob{
+    width: 100%;
+  }
 
   .form-step {
     position: relative; }

@@ -2,7 +2,8 @@
 if($args['row']):
 	foreach($args['row'] as $key=>$arg) $$key = $arg; ?>
 
-	<section class="item-5x<?php if($background_color == 'Light blue') echo ' bg-l-blue'; if($text_alignment == 'Center') echo ' top-center'; ?>"<?php if($id) echo ' id="' . $id . '"' ?>>
+	<?php if (is_array($cards) && checkArrayForValues($cards)): ?>
+	<section class="item-5x<?php if($background_color == 'Light blue') echo ' bg-l-blue'; if($text_alignment == 'Center') echo ' top-center'; if(count($cards) > 5) echo ' item-' . count($cards) . 'x'; ?>"<?php if($id) echo ' id="' . $id . '"' ?>>
 		<div class="container">
 			<div class="row">
 				<div class="top">
@@ -18,8 +19,6 @@ if($args['row']):
 					<?= $description ?>
 
 				</div>
-
-				<?php if (is_array($cards) && checkArrayForValues($cards)): ?>
 				<div class="content d-flex flex-wrap">
 
 					<?php foreach ($cards as $item): ?>
@@ -43,10 +42,16 @@ if($args['row']):
 					<?php endforeach ?>
 					
 				</div>
-			<?php endif ?>
 
+				<?php if ($button): ?>
+					<div class="btn-wrap d-flex justify-content-center">
+						<a href="<?= $button['url'] ?>" class="btn-default"<?php if($button['target']) echo ' target="_blank"' ?>><?= $button['title'] ?></a>
+					</div>
+				<?php endif ?>
+
+			</div>
 		</div>
-	</div>
-</section>
+	</section>
+<?php endif ?>
 
 <?php endif; ?>

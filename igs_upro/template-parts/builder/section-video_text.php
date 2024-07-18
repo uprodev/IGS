@@ -20,7 +20,7 @@ if($args['row']):
 							<?php endif ?>
 
 							<?php if ($is_video): ?>
-								<span class="icon-wrap"><i class="fa-thin fa-circle-play"></i></span>
+								<span class="icon-wrap"><img src="<?= get_stylesheet_directory_uri() ?>/img/play1.svg" alt=""></span>
 							</a>
 						<?php endif ?>
 

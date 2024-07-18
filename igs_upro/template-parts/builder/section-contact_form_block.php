@@ -68,10 +68,6 @@ if($args['row']):
 						<?php if ($form_desktop): ?>
 							<?= do_shortcode('[contact-form-7 id="' . $form_desktop . '" html_class="form-white"]') ?>
 						<?php endif ?>
-
-						<?php if ($form_mobile): ?>
-							<?= do_shortcode('[contact-form-7 id="' . $form_mobile . '" html_class="form-step"]') ?>
-						<?php endif ?>
 						
 						<?php if ($privacy_policy_text): ?>
 							<div class="info-text"><?= $privacy_policy_text ?></div>

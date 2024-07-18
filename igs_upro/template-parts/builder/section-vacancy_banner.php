@@ -44,8 +44,8 @@ if($args['row']):
 					<?php if ($terms): ?>
 						<div class="btn-wrap d-flex flex-wrap">
 
-							<?php foreach ($terms as $index => $term): ?>
-								<a href="#" class="btn-default btn-white btn-flag btn-border" data-value="<?= $term->term_id ?>">
+							<?php foreach (array_reverse($terms) as $index => $term): ?>
+								<a href="#" class="btn-default btn-white btn-flag<?php if($index > 0) echo ' btn-border' ?>" data-value="<?= $term->term_id ?>">
 
 									<?php if ($field = get_field('flag', 'term_' . $term->term_id)): ?>
 										<span>

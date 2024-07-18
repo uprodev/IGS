@@ -2,7 +2,7 @@
 if($args['row']):
 	foreach($args['row'] as $key=>$arg) $$key = $arg; ?>
 
-	<section class="home-banner precision-banner contact-banner bg-gradient-blue">
+	<section class="home-banner precision-banner contact-banner">
 
 		<?php if ($background_image_desktop || $background_image_mobile): ?>
 			<div class="bg">

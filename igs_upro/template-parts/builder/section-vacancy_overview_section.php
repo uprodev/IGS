@@ -14,6 +14,13 @@ if($args['row']):
 			'post_type' => 'vacancy', 
 			'posts_per_page' => 9,
 			'post_status' => 'publish',
+			'tax_query' => array(
+				array(
+					'taxonomy' => 'vacancy_language',
+					'field'    => 'id',
+					'terms'    => 7
+				)
+			),
 			'paged' => get_query_var('paged')
 		);
 		if($is_custom) {

@@ -1,3 +1,4 @@
+<a href="<?php the_permalink() ?>" class="all"></a>
 <figure>
 
 	<?php 

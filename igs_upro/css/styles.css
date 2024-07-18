@@ -504,7 +504,7 @@ section {
   .img-text h2 {
     margin-bottom: 17px; }
   .img-text .text-wrap {
-    margin-bottom: 55px; }
+    margin-bottom: 40px; }
   .img-text .btn-wrap {
     grid-gap: 20px; }
 
@@ -525,6 +525,7 @@ section .btn-default {
   line-height: 52px;
   min-width: 162px;
   text-align: center; }
+
 
 .link {
   display: inline-block;
@@ -774,11 +775,26 @@ input::-webkit-inner-spin-button {
 
 input[type=number] {
   -moz-appearance: textfield; }
-
+.form-white .input-wrap .wpcf7-form-control-wrap{
+  display: block;
+  width: 100%;
+}
+.form-white .input-wrap{
+  position: relative;
+}
+.form-white .input-wrap .wpcf7-not-valid-tip{
+  position: absolute;
+  bottom: -15px;
+  font-size: 12px;
+  left: 0;
+}
+.contact-banner .bg-item{
+  position: relative;
+}
 /*------------------------END-TEXT-FORM--------------------------*/
 /*------------------------SLIDER-IMG-TEXT--------------------------*/
 .news-slider .swiper-slide .text h5 {
-  min-height: 50px; }
+  min-height: 84px; }
 
 .slider-img-text-section .nav-wrap ul a span:nth-child(2) {
   display: none; }
@@ -2410,7 +2426,7 @@ footer {
       margin-bottom: 20px; }
 
 .img-full-slider {
-  margin-bottom: 15px; }
+  margin-bottom: 30px; }
   .img-full-slider .swiper-slide img {
     width: 100%;
     height: 411px;
@@ -3069,5 +3085,46 @@ figure .img-mob {
 .bg-white-bottom .bg {
   background: #fff;
   top: 50%; }
+
+.form-white .input-wrap-full .wpcf7-form-control-wrap{
+  width: 100%;
+}
+
+.news-slider .swiper-slide .all{
+  position: absolute;
+  top: 0;
+  display: block;
+  width: 100%;
+  left: 0;
+  height: 100%;
+  z-index: 10;
+}
+
+.news-slider .swiper-slide .all:hover + figure img{
+  transform: scale(1.02);
+
+}
+
+.news-slider .swiper-slide figure{
+  overflow: hidden;
+}
+
+.news-slider .swiper-slide figure img{
+  -webkit-transition: all .2s ease;
+  transition: all .2s ease;
+  transform-origin: center;
+}
+
+.btn-default{
+  text-align: center;
+}
+
+footer .bottom a, footer .bottom p{
+  display: inline-block;
+  line-height: 28px;
+}
+footer .bottom p{
+  height: 28px;
+}
 
 /*# sourceMappingURL=styles.css.map */

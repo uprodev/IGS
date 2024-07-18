@@ -118,7 +118,7 @@ jQuery(document).ready(function ($) {
       clickable: true,
     },
     breakpoints: {
-      640: {
+      768: {
         slidesPerView: 2,
         spaceBetween: 20,
       },
@@ -334,6 +334,12 @@ jQuery(document).ready(function ($) {
     })
   });
 
+  if(window.innerWidth > 1199){
+    if($('.news-slider .swiper-slide').length<3){
+      $('.news .nav-wrap').hide();
+    }
+
+  }
 
 });
 
