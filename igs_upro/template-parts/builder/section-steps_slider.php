@@ -72,13 +72,9 @@ if($args['row']):
 							</div>
 						</div>
 					</div>
-
-					<?php if (count($steps) > 3): ?>
-						<div class="swiper-button-next next-item d-flex justify-content-center align-items-center btn"><i class="fa-light fa-arrow-right "></i></div>
-						<div class="swiper-button-prev prev-item d-flex justify-content-center align-items-center btn"><i class="fa-light fa-arrow-left "></i></div>
-						<div class="swiper-pagination pagination-item"></div>
-					<?php endif ?>
-					
+					<div class="swiper-button-next next-item d-flex justify-content-center align-items-center btn"><i class="fa-light fa-arrow-right "></i></div>
+					<div class="swiper-button-prev prev-item d-flex justify-content-center align-items-center btn"><i class="fa-light fa-arrow-left "></i></div>
+					<div class="swiper-pagination pagination-item"></div>
 				</div>
 			<?php endif ?>
 

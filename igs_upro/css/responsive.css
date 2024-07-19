@@ -146,7 +146,12 @@
 @media (max-width: 991px) {
   .top-menu ul {
     display: none; }
-
+  footer{
+    padding-bottom: 85px;
+  }
+  .fix-block{
+    bottom: 80px;
+  }
   .top-line {
     padding-top: 30px; }
 
@@ -296,8 +301,8 @@
   .cta-block .text {
     padding: 30px; }
 
-  .slider-3x .slider-wrap .btn {
-    display: none !important; }
+/*  .slider-3x .slider-wrap .btn {
+    display: none !important; }*/
 
   header .content {
     background: transparent;

@@ -335,11 +335,15 @@ jQuery(document).ready(function ($) {
   });
 
   if(window.innerWidth > 1199){
-    if($('.news-slider .swiper-slide').length<3){
-      $('.news .nav-wrap').hide();
+    if($('.news-slider .swiper-slide').length<4){
+      $('.news .nav-wrap').addClass('is-hide');
+
     }
+    if($('.slider-item .swiper-slide').length<4){
+      $('.slider-3x .slider-wrap .btn').addClass('is-hide');
 
+    }
   }
-
+  
 });
 

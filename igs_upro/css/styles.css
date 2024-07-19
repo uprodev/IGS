@@ -2211,7 +2211,7 @@ footer {
         letter-spacing: normal;
         text-align: left;
         color: #001f3c;
-        min-width: 56px;
+        min-height: 84px;
         margin-bottom: 18px; }
       .news-block .item .text .link-wrap a {
         font-size: 18px;
@@ -3126,5 +3126,7 @@ footer .bottom a, footer .bottom p{
 footer .bottom p{
   height: 28px;
 }
-
+.is-hide{
+  display: none!important;
+}
 /*# sourceMappingURL=styles.css.map */
