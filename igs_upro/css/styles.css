@@ -794,7 +794,7 @@ input[type=number] {
 /*------------------------END-TEXT-FORM--------------------------*/
 /*------------------------SLIDER-IMG-TEXT--------------------------*/
 .news-slider .swiper-slide .text h5 {
-  min-height: 84px; }
+  min-height: 140px; }
 
 .slider-img-text-section .nav-wrap ul a span:nth-child(2) {
   display: none; }
@@ -2188,10 +2188,14 @@ footer {
         font-style: normal;
         line-height: 28px;
         color: #fff; }
+.news-block .item{
+  position: relative;
+  background-color: #eff7ff;
+}
     .news-block .item .text {
       border-radius: 0 0 5px 5px;
       background-color: #eff7ff;
-      padding: 32px 31px; }
+      padding: 32px 31px 70px; }
       .news-block .item .text .sub-title {
         font-size: 16px;
         font-weight: 500;
@@ -2211,8 +2215,13 @@ footer {
         letter-spacing: normal;
         text-align: left;
         color: #001f3c;
-        min-height: 84px;
+        min-height: 0;
         margin-bottom: 18px; }
+.news-block .item .text .link-wrap{
+  position: absolute;
+  bottom: 30px;
+  left: 32px;
+}
       .news-block .item .text .link-wrap a {
         font-size: 18px;
         font-weight: 600;

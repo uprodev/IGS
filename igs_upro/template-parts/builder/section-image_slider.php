@@ -26,13 +26,17 @@ if($args['row']):
 				<div class="swiper img-big-slider">
 					<div class="swiper-wrapper">
 
-						<?php foreach($images as $image): ?>
+						<?php for ($i = 0; $i < 2; $i++) { ?>
+							
+							<?php foreach($images as $image): ?>
 
-							<div class="swiper-slide">
-								<?= wp_get_attachment_image($image['ID'], 'full') ?>
-							</div>
+								<div class="swiper-slide">
+									<?= wp_get_attachment_image($image['ID'], 'full') ?>
+								</div>
 
-						<?php endforeach; ?>
+							<?php endforeach; ?>
+
+						<?php } ?>
 
 					</div>
 				</div>

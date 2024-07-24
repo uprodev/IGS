@@ -57,7 +57,7 @@
 
 		default:
 		$link_url = get_permalink($args['post_id']);
-		$link_title = get_field('card_link_text', $args['post_id']);
+		$link_title = get_field('card_link_text', $args['post_id']) ?: __('Read more', 'IGS');
 		break;
 	}
 	?>

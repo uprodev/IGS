@@ -1,3 +1,5 @@
+
+
 @media (min-width: 1400px) {
   .container, .container-lg, .container-md, .container-sm, .container-xl, .container-xxl {
     max-width: 1140px; }
@@ -116,7 +118,7 @@
     font-size: 32px; }
 
   .news-block .item .text {
-    padding: 25px 25px; }
+    padding: 25px 25px 50px; }
 
   .career-block .item .text {
     padding: 25px 25px 65px; }
@@ -124,6 +126,9 @@
   .career-block .item .link-wrap {
     left: 25px;
     right: 25px; }
+  .news-block .item .text .link-wrap{
+    left: 25px;
+  }
 
   .career-block .item .text {
     min-height: 290px; }
@@ -757,7 +762,10 @@
     min-height: 72px; }
 
   .news-block .item .text {
-    padding: 20px 15px; }
+    padding: 20px 15px 50px; }
+  .news-block .item .text .link-wrap{
+    left: 15px;
+  }
 
   .text-default .cta-big figure {
     width: 100%; }
@@ -1128,7 +1136,7 @@
     font-size: 16px; }
 
   .news-slider .swiper-slide .text h5 {
-    min-height: 75px; }
+    min-height: 104px; }
 
   .news .nav-wrap {
     margin-top: 25px; }
